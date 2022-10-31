@@ -25,16 +25,16 @@ $date_out = isset($_POST['date_out']) ? $_POST['date_out'] : date('Y-m-d',strtot
 									<form action="index.php?page=list" id="filter" method="POST">
 			        					<div class="row">
 			        						<div class="col-md-3">
-			        							<label for="">Chech-in Date</label>
+			        							<label for="">วันที่เช็คอิน</label>
 			        							<input type="text" class="form-control datepicker" name="date_in" autocomplete="off" value="<?php echo isset($date_in) ? date("Y-m-d",strtotime($date_in)) : "" ?>">
 			        						</div>
 			        						<div class="col-md-3">
-			        							<label for="">Chech-out Date</label>
+			        							<label for="">วันที่เช็คเอ้าท์</label>
 			        							<input type="text" class="form-control datepicker" name="date_out" autocomplete="off" value="<?php echo isset($date_out) ? date("Y-m-d",strtotime($date_out)) : "" ?>">
 			        						</div>
 			        						<div class="col-md-3">
 			        							<br>
-			        							<button class="btn-btn-block btn-primary mt-3">Check Availability</button>
+			        							<button class="btn-btn-block btn-primary mt-3">ค้นหา</button>
 			        						</div>
 
 			        					</div>

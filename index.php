@@ -31,14 +31,13 @@
                 <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span></button>
                 <div class="collapse navbar-collapse" id="navbarResponsive">
                     <ul class="navbar-nav ml-auto my-2 my-lg-0">
-                        <li class="nav-item"><a class="nav-link js-scroll-trigger" href="index.php?page=home">Home</a></li>
+                        <li class="nav-item"><a class="nav-link js-scroll-trigger" href="index.php?page=home">หน้าหลัก</a></li>
                         <li class="nav-item"><a class="nav-link js-scroll-trigger" href="index.php?page=list">Rooms</a></li>
                         <li class="nav-item"><a class="nav-link js-scroll-trigger" href="index.php?page=about">About</a></li>
                     </ul>
                 </div>
             </div>
         </nav>
-       <p>hi</p>
         <?php 
         $page = isset($_GET['page']) ?$_GET['page'] : "home";
         include $page.'.php';
@@ -77,7 +76,7 @@
     </div>
   </div>
         <footer class="bg-light py-5">
-            <div class="container"><div class="small text-center text-muted">Hotel Mangement system | <a href="https://1sourcecodr.blogspot.com/" target="_blank">1 SOURCE CODE</a></div></div>
+            <div class="container"><div class="small text-center text-muted">Villa de panta Phurua | <a href="https://www.facebook.com/VilladePanta456" target="_blank">Facebook</a></div></div>
         </footer>
         
        <?php include('footer.php') ?>
