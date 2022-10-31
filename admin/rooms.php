@@ -9,7 +9,7 @@
 			<form action="" id="manage-room">
 				<div class="card">
 					<div class="card-header">
-						    จัดการห้องพัก
+						    เพิ่มห้องพัก
 				  	</div>
 					<div class="card-body">
 							<input type="hidden" name="id">
