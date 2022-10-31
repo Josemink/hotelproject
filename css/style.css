@@ -1,13 +1,8 @@
-/*--
-Author: W3layouts
-Author URL: http://w3layouts.com
-License: Creative Commons Attribution 3.0 Unported
-License URL: http://creativecommons.org/licenses/by/3.0/
---*/
+
 html, body{
 	margin:0;
 	font-size: 100%;
-	font-family: 'Lato', sans-serif;
+	font-family: 'Prompt', sans-serif;
 	background: #fff;
 }
 body a {
@@ -30,7 +25,7 @@ input[type="button"],input[type="submit"]{
 }
 h1,h2,h3,h4,h5,h6{
 	margin:0;
-	font-family: 'Federo', sans-serif;
+	font-family: 'Prompt', sans-serif;
     font-weight: 600;
 }	
 p{
@@ -169,7 +164,7 @@ ul.social-icons3 {
     color: #555;
     border: 1px solid #fff;
     background: #fff;
-	font-family: 'Lato', sans-serif;
+	font-family: 'Prompt', sans-serif;
 }
 .search_form input[type='search']::-webkit-input-placeholder{
 	color:#fff !important;
@@ -184,7 +179,7 @@ ul.social-icons3 {
     border: 2px solid #ffffff;
     text-transform: uppercase;
     padding: 5px 31px;
-	font-family: 'Federo', sans-serif;
+	font-family: 'Prompt', sans-serif;
 }
 .search_form input[type='submit']:hover {
     background: #ffce14;
@@ -287,7 +282,7 @@ p.logo_w3l_agile_caption {
     font-size: 11px;
     color: #c79f07;
     text-shadow: 0px 1px 3px #454a47;
-    font-family: 'Lato', sans-serif;
+    font-family: 'Prompt', sans-serif;
     font-weight: 600;
 }
 .agile_short_dropdown {
@@ -411,7 +406,7 @@ li.menu__item:nth-child(6) {
     letter-spacing: 27px;
     font-weight: bold;
     text-transform: uppercase;
-    font-family: 'Oswald', sans-serif;
+    font-family: 'Prompt', sans-serif;
 }
 .agileits-banner-info h3 {
     color: #fff;
@@ -758,7 +753,7 @@ li.menu__item:nth-child(6) {
     -webkit-appearance: none;
     margin-bottom: 1em;
     background: none;
-	font-family: 'Lato', sans-serif;
+	font-family: 'Prompt', sans-serif;
 }
 .book-form input[type="text"]{
 	 border: 2px solid #fff;
@@ -1058,7 +1053,7 @@ h3.title-w3-agileits {
     margin-bottom: 1em;
     text-align: center;  
 	text-transform: capitalize;
-	font-family:'Oswald', sans-serif;
+	font-family: 'Prompt', sans-serif;
 }
 .title-black-wthree{
 	color:#0f2453!important;
@@ -1493,7 +1488,7 @@ section.contact-w3ls p.contact-agile1 {
     color: #fff;
 }
 section.contact-w3ls p.contact-agile1 strong {
-    font-family: 'Federo', sans-serif;
+    font-family: 'Prompt', sans-serif;
     letter-spacing: 1.5px;
     color: #ffce14!important;
 	font-size: 16px;
@@ -1511,7 +1506,7 @@ section.contact-w3ls h4 {
 	font-weight:normal;
 	color:#fff;
 	padding-bottom:20px;
-	font-family: 'Federo', sans-serif;
+	font-family: 'Prompt', sans-serif;
 	text-align:center;
 }
 section.contact-w3ls p.contact-agile2 {
@@ -1528,7 +1523,7 @@ section.contact-w3ls label.contact-p1 {
     font-weight: 300;
     color:#fff;
     padding-bottom: 10px;
-	font-family: 'Federo', sans-serif;
+	font-family: 'Prompt', sans-serif;
 }
 .form-group {
     margin-bottom: 5px;
@@ -1546,7 +1541,7 @@ section.contact-w3ls input#name, section.contact-w3ls input#email, section.conta
 	background-color:transparent;
 	border-radius:0;
 	border-color:#fff;
-	font-family: 'Lato', sans-serif;
+	font-family: 'Prompt', sans-serif;
 }
 section.contact-w3ls button.btn.btn-primary {
 	color:#ffce14;
@@ -1555,7 +1550,7 @@ section.contact-w3ls button.btn.btn-primary {
     font-size: 17px;
     padding: 10px 20px;	
 	width:100%;
-	font-family: 'Federo', sans-serif;
+	font-family: 'Prompt', sans-serif;
 	margin: 25px 0 8px;
 }
 section.contact-w3ls button.btn.btn-primary:hover {
