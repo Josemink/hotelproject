@@ -23,5 +23,5 @@
 
 </nav>
 <script>
-	$('.nav-<?php echo isset($_GET['page']) ? $_GET['page'] : '' ?>').addClass('active')
-</script>
+	$('.nav-<?php echo isset($_GET['page']) ? $_GET['page']  :'' ?>').addClass('active') 
+</script> 
