@@ -8,7 +8,7 @@
 @import url(https://meyerweb.com/eric/tools/css/reset/reset.css);
 /* ---------- FONTAWESOME ---------- */
 [class*="fontawesome-"]:before {
-  font-family: 'FontAwesome', sans-serif;
+	font-family: 'Prompt', sans-serif;
 }
 
 /* ---------- GENERAL ---------- */
@@ -41,7 +41,7 @@ a:hover {
 
 input {
   border: none;
-  font-family: 'Open Sans', Arial, sans-serif;
+  font-family: 'Prompt', sans-serif;
   font-size: 14px;
   line-height: 1.5em;
   padding: 0;

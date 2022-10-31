@@ -86,6 +86,18 @@ $date_out = isset($_POST['date_out']) ? $_POST['date_out'] : date('Y-m-d', strto
                             <div class="col-md-9">
                                 <button type="submit" name="signup" class="btn btn-success w-100 ">ชำระเงิน</button>
                             </div>
+                            <div class="col-md-10 ms-auto">
+                                <div class="img">
+                                    <img src="../img/QRCode.jpg" alt="">
+                                </div>
+                                <div class="row">
+                                    <div class="col-50">
+                                        <ul>ชื่อบัญชี : VILLA DE PANTA PHU RUEA</ul>
+                                        <ul>เลขบัญชี : 120-5698-326</ul>
+                                        <ul>ชื่อธนาคาร : ไทยพาณิชย์</ul>
+                                    </div>
+                                </div>
+                            </div>
                         </div>
                     </div>
                 </div>
