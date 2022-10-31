@@ -32,7 +32,9 @@
                 <div class="collapse navbar-collapse" id="navbarResponsive">
                     <ul class="navbar-nav ml-auto my-2 my-lg-0">
                         <li class="nav-item"><a class="nav-link js-scroll-trigger" href="index.php?page=home">หน้าหลัก</a></li>
-                        <li class="nav-item"><a class="nav-link js-scroll-trigger" href="index.php?page=list">Rooms</a></li>
+                        <li class="nav-item"><a class="nav-link js-scroll-trigger" href="index.php?page=list">ห้องพัก</a></li>
+                        <li class="nav-item"><a class="nav-link js-scroll-trigger" href="index.php?page=payment">ชำระเงิน</a></li>
+                        <li class="nav-item"><a class="nav-link js-scroll-trigger" href="index.php?page=mybooking">การจองของฉัน</a></li>
                         <li class="nav-item"><a class="nav-link js-scroll-trigger" href="index.php?page=about">About</a></li>
                     </ul>
                 </div>

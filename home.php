@@ -10,11 +10,11 @@
                     					<div class="row">
                     						<div class="col-md-3">
                     							<label for="">วันที่เช็คอิน</label>
-                    							<input type="text" class="form-control datepicker" name="date_in" autocomplete="off">
+                    							<input type="date" class="form-control datepicker" name="date_in" autocomplete="off">
                     						</div>
                     						<div class="col-md-3">
                     							<label for="">วันที่เช็คเอ้าท์</label>
-                    							<input type="text" class="form-control datepicker" name="date_out" autocomplete="off">
+                    							<input type="date" class="form-control datepicker" name="date_out" autocomplete="off">
                     						</div>
                     						
                     						<div class="col-md-3">
