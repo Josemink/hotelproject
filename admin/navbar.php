@@ -1,7 +1,7 @@
 
 <style>
 	nav#sidebar {
-    background: url(../assets/img/<?php echo $_SESSION['setting_cover_img'] ?>);
+    background: #EF774B;
     background-repeat: no-repeat;
     background-size: cover;
 </style>
