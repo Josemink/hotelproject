@@ -13,23 +13,23 @@ $calc_days = abs(strtotime($_GET['out']) - strtotime($_GET['in'])) ;
 
 
 		<div class="form-group">
-			<label for="name">Name</label>
+			<label for="name">ชื่อ-นามสกุล</label>
 			<input type="text" name="name" id="name" class="form-control" value="<?php echo isset($meta['name']) ? $meta['name']: '' ?>" required>
 		</div>
 		<div class="form-group">
-			<label for="contact">Contact #</label>
+			<label for="contact">เบอร์โทร</label>
 			<input type="text" name="contact" id="contact" class="form-control" value="<?php echo isset($meta['contact_no']) ? $meta['contact_no']: '' ?>" required>
 		</div>
 		<div class="form-group">
-			<label for="date_in">Check-in Date</label>
+			<label for="date_in">วันที่เช็คอิน</label>
 			<input type="date" name="date_in" id="date_in" class="form-control" value="<?php echo isset($_GET['in']) ? date("Y-m-d",strtotime($_GET['in'])): date("Y-m-d") ?>" required readonly>
 		</div>
 		<div class="form-group">
-			<label for="date_in_time">Check-in Date</label>
+			<label for="date_in_time">วันที่เช็คเอ้าท์</label>
 			<input type="time" name="date_in_time" id="date_in_time" class="form-control" value="<?php echo isset($_GET['date_in']) ? date("H:i",strtotime($_GET['date_in'])): date("H:i") ?>" required>
 		</div>
 		<div class="form-group">
-			<label for="days">Days of Stay</label>
+			<label for="days">จำนวนวันที่อยู่</label>
 			<input type="number" min ="1" name="days" id="days" class="form-control" value="<?php echo isset($_GET['in']) ? $calc_days: 1 ?>" required readonly>
 		</div>
 	</form>

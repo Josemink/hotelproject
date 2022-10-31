@@ -9,16 +9,16 @@
 			<form action="" id="manage-room">
 				<div class="card">
 					<div class="card-header">
-						    Room Form
+						    จัดการห้องพัก
 				  	</div>
 					<div class="card-body">
 							<input type="hidden" name="id">
 							<div class="form-group">
-								<label class="control-label">Room</label>
+								<label class="control-label">เลขห้องพัก</label>
 								<input type="text" class="form-control" name="room">
 							</div>
 							<div class="form-group">
-								<label class="control-label">Category</label>
+								<label class="control-label">ประเภทห้องพัก</label>
 								<select class="custom-select browser-default" name="category_id">
 									<?php 
 									$cat = $conn->query("SELECT * FROM room_categories order by name asc ");
@@ -32,11 +32,12 @@
 								</select>
 							</div>
 							<div class="form-group">
-								<label for="" class="control-label">Availability</label>
+								<label for="" class="control-label">สถานะห้องว่าง</label>
 								<select class="custom-select browser-default" name="status">
-									<option value="0">Available</option>
-									<option value="1">Unavailable</option>
-
+									<option value="0">ว่าง</option>
+									<option value="1">เต็ม</option>
+									<option value="2">กำลังทำความสะอาด</option>
+									<option value="3">ในระหว่างดการซ่อมแซม</option>
 								</select>
 							</div>
 					</div>
@@ -44,8 +45,8 @@
 					<div class="card-footer">
 						<div class="row">
 							<div class="col-md-12">
-								<button class="btn btn-sm btn-primary col-sm-3 offset-md-3"> Save</button>
-								<button class="btn btn-sm btn-default col-sm-3" type="button" onclick="$('#manage-room').get(0).reset()"> Cancel</button>
+								<button class="btn btn-sm btn-success col-sm-3 offset-md-3">บันทึก</button>
+								<button class="btn btn-sm btn-danger col-sm-3" type="button" onclick="$('#manage-room').get(0).reset()">ยกเลิก</button>
 							</div>
 						</div>
 					</div>
@@ -61,11 +62,11 @@
 						<table class="table table-bordered table-hover">
 							<thead>
 								<tr>
-									<th class="text-center">#</th>
-									<th class="text-center">Category</th>
-									<th class="text-center">Room</th>
-									<th class="text-center">Status</th>
-									<th class="text-center">Action</th>
+									<th class="text-center">ลำดับ</th>
+									<th class="text-center">ประเภทห้องพัก</th>
+									<th class="text-center">เลขห้องพัก</th>
+									<th class="text-center">สถาะห้อง</th>
+									<th class="text-center">จัดการ</th>
 								</tr>
 							</thead>
 							<tbody>
@@ -81,13 +82,13 @@
 									<td class="text-center"><?php echo $cat_name[$row['category_id']] ?></td>
 									<td class=""><?php echo $row['room'] ?></td>
 									<?php if($row['status'] == 0): ?>
-										<td class="text-center"><span class="badge badge-success">Available</span></td>
+										<td class="text-center"><span class="badge badge-success">ว่าง</span></td>
 									<?php else: ?>
-										<td class="text-center"><span class="badge badge-default">Unavailable</span></td>
+										<td class="text-center"><span class="badge badge-danger">เต็ม</span></td>
 									<?php endif; ?>
 									<td class="text-center">
-										<button class="btn btn-sm btn-primary edit_cat" type="button" data-id="<?php echo $row['id'] ?>" data-room="<?php echo $row['room'] ?>" data-category_id="<?php echo $row['category_id'] ?>" data-status="<?php echo $row['status'] ?>">Edit</button>
-										<button class="btn btn-sm btn-danger delete_cat" type="button" data-id="<?php echo $row['id'] ?>">Delete</button>
+										<button class="btn btn-sm btn-primary edit_cat" type="button" data-id="<?php echo $row['id'] ?>" data-room="<?php echo $row['room'] ?>" data-category_id="<?php echo $row['category_id'] ?>" data-status="<?php echo $row['status'] ?>">แก้ไข</button>
+										<button class="btn btn-sm btn-danger delete_cat" type="button" data-id="<?php echo $row['id'] ?>">ลบ</button>
 									</td>
 								</tr>
 								<?php endwhile; ?>
