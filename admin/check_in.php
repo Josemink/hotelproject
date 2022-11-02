@@ -10,9 +10,9 @@
 								<form id="filter">
 									<div class="row">
 										<div class=" col-md-4">
-											<label class="control-label">Category</label>
+											<label class="control-label">ประเภทห้อง</label>
 											<select class="custom-select browser-default" name="category_id">
-												<option value="all" <?php echo isset($_GET['category_id']) && $_GET['category_id'] == 'all' ? 'selected' : '' ?>>All</option>
+												<option value="all" <?php echo isset($_GET['category_id']) && $_GET['category_id'] == 'all' ? 'selected' : '' ?>>ทั้งหมด</option>
 												<?php 
 												$cat = $conn->query("SELECT * FROM room_categories order by name asc ");
 												while($row= $cat->fetch_assoc()) {
@@ -26,7 +26,7 @@
 										</div> 
 										<div class="col-md-2">
 											<label for="" class="control-label">&nbsp</label>
-											<button class="btn btn-block btn-primary">Filter</button>
+											<button class="btn btn-block btn-primary">ค้นหา</button>
 										</div>
 									</div>
 								</form>
@@ -42,11 +42,11 @@
 					<div class="card-body">
 						<table class="table table-bordered">
 							<thead>
-								<th>#</th>
-								<th>Category</th>
-								<th>Room</th>
-								<th>Status</th>
-								<th>Action</th>
+								<th>ลำดับ</th>
+								<th>ประเภทห้อง</th>
+								<th>เลขห้อง</th>
+								<th>สถานะ</th>
+								<th>จัดการ</th>
 							</thead>
 							<tbody>
 								<?php 
@@ -67,9 +67,9 @@
 									<td class="text-center"><?php echo $cat_name[$row['category_id']] ?></td>
 									<td class=""><?php echo $row['room'] ?></td>
 									<?php if($row['status'] == 0): ?>
-										<td class="text-center"><span class="badge badge-success">Available</span></td>
+										<td class="text-center"><span class="badge badge-success">ว่าง</span></td>
 									<?php else: ?>
-										<td class="text-center"><span class="badge badge-default">Unavailable</span></td>
+										<td class="text-center"><span class="badge badge-default">เต็ม</span></td>
 									<?php endif; ?>
 									<td class="text-center">
 											<button class="btn btn-sm btn-primary check_in" type="button" data-id="<?php echo $row['id'] ?>">Check-in</button>
