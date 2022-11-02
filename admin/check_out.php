@@ -18,12 +18,12 @@ while($row = $room->fetch_assoc()){
 					<div class="card-body">
 						<table class="table table-bordered">
 							<thead>
-								<th>#</th>
-								<th>Category</th>
-								<th>Room</th>
+								<th>ลำดับ</th>
+								<th>ประเภทห้อง</th>
+								<th>เลขห้อง</th>
 								<th>Reference</th>
-								<th>Status</th>
-								<th>Action</th>
+								<th>สถานะ</th>
+								<th>จัดการ</th>
 							</thead>
 							<tbody>
 								<?php 
@@ -42,7 +42,7 @@ while($row = $room->fetch_assoc()){
 										<td class="text-center"><span class="badge badge-success">Checked-Out</span></td>
 									<?php endif; ?>
 									<td class="text-center">
-											<button class="btn btn-sm btn-primary check_out" type="button" data-id="<?php echo $row['id'] ?>">View</button>
+											<button class="btn btn-sm btn-primary check_out" type="button" data-id="<?php echo $row['id'] ?>">ดูรายละเอียดเพิ่มเติม</button>
 									</td>
 								</tr>
 							<?php endwhile; ?>
