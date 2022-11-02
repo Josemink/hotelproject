@@ -16,10 +16,10 @@
 				<table class="table-striped table-bordered col-md-12">
 			<thead>
 				<tr>
-					<th class="text-center">#</th>
-					<th class="text-center">Name</th>
-					<th class="text-center">Username</th>
-					<th class="text-center">Action</th>
+					<th class="text-center">ลำดับ</th>
+					<th class="text-center">ชื่อ</th>
+					<th class="text-center">ชื่อผู้ใช้</th>
+					<th class="text-center">จัดการ</th>
 				</tr>
 			</thead>
 			<tbody>
@@ -42,14 +42,14 @@
 				 	<td>
 				 		<center>
 								<div class="btn-group">
-								  <button type="button" class="btn btn-primary">Action</button>
+								  <button type="button" class="btn btn-primary">จัดการ</button>
 								  <button type="button" class="btn btn-primary dropdown-toggle dropdown-toggle-split" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
 								    <span class="sr-only">Toggle Dropdown</span>
 								  </button>
 								  <div class="dropdown-menu">
-								    <a class="dropdown-item edit_user" href="javascript:void(0)" data-id = '<?php echo $row['id'] ?>'>Edit</a>
+								    <a class="dropdown-item edit_user" href="javascript:void(0)" data-id = '<?php echo $row['id'] ?>'>แก้ไข</a>
 								    <div class="dropdown-divider"></div>
-								    <a class="dropdown-item delete_user" href="javascript:void(0)" data-id = '<?php echo $row['id'] ?>'>Delete</a>
+								    <a class="dropdown-item delete_user" href="javascript:void(0)" data-id = '<?php echo $row['id'] ?>'>ลบ</a>
 								  </div>
 								</div>
 								</center>

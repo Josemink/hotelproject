@@ -19,7 +19,7 @@ $rre=mysqli_query($con,$rsql);
 <head>
       <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>SUNRISE HOTEL</title>
+
 	<!-- Bootstrap Styles-->
     <link href="assets/css/bootstrap.css" rel="stylesheet" />
      <!-- FontAwesome Styles-->
@@ -137,7 +137,7 @@ $rre=mysqli_query($con,$rsql);
 								$sql ="DELETE FROM `room` WHERE id = '$did'" ;
 								if(mysqli_query($con,$sql))
 								{
-								 echo '<script type="text/javascript">alert("Delete the Room") </script>' ;
+								 echo '<script type="text/javascript">alert("ลบห้องพักนี้") </script>' ;
 										
 										header("Location: roomdel.php");
 								}else {
