@@ -36,7 +36,6 @@ $date_out = isset($_POST['date_out']) ? $_POST['date_out'] : date('Y-m-d',strtot
 			        							<br>
 			        							<button class="btn-btn-block btn-primary mt-3">ค้นหา</button>
 			        						</div>
-
 			        					</div>
 			        				</form>
 							</div>
