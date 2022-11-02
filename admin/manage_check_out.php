@@ -28,7 +28,7 @@ if($_GET['id']){
 	}
 </style>
 <div class="container-fluid">
-	<p><b>เลขห้อง: </b><?php echo isset($room['room']) ? $room['room'] : 'NA' ?></p>
+	<p><b>เลขห้อง: </b><?php echo isset($room['room']) ? $room['room'] : 'room' ?></p>
 	<p><b>ประเภทห้อง : </b><?php echo $cat['name'] ?></p>
 	<p><b>ราคา : </b><?php echo '$'.number_format($cat['price'],2) ?></p>
 	<p><b>เลขที่อ้างอิง : </b><?php echo $ref_no ?></p>
