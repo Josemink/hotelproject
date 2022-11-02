@@ -80,6 +80,23 @@
 									</div>
 								</div>
 							</div>
+							<div class="mb-3">
+                            <label for="R_ guest" class="form-label">จำกัดจำนวนผู้เข้าพัก</label>
+                            <div class="form-check">
+                                <input class="form-check-input" type="checkbox" value="" name="1" id="flexCheckDefault">
+                                <label class="form-check-label" for="flexCheckDefault">
+                                    ผู้ใหญ่
+                                </label>
+                                <input id="number" type="number" value="" class="form-control" id="bed1" name="1" aria-describedby="emailHelp" placeholder="กรุณากำหนดจำนวนผู้เข้าพัก">
+                            </div>
+                            <div class="form-check">
+                                <input class="form-check-input" type="checkbox" value="" name="2" id="flexCheckDefault">
+                                <label class="form-check-label" for="flexCheckDefault">
+                                    เด็ก
+                                </label>
+                                <input id="number" type="number" value="" class="form-control" id="bed2" name="2" aria-describedby="emailHelp" placeholder="กรุณากำหนดจำนวนผู้เข้าพัก">
+                            </div>
+                        </div>
 							<div class="form-group">
 								<label class="control-label">ราคา</label>
 								<input type="number" class="form-control text-right" name="price" step="any">
@@ -115,7 +132,7 @@
 								<tr>
 									<th class="text-center">ลำดับ</th>
 									<th class="text-center">รูปภาพ</th>
-									<th class="text-center">ห้อง</th>
+									<th class="text-center">รายละเอียด</th>
 									<th class="text-center">จัดการ</th>
 								</tr>
 							</thead>
@@ -133,8 +150,11 @@
 											<img src="<?php echo isset($row['cover_img']) ? '../assets/img/' . $row['cover_img'] : '' ?>" alt="" id="cimg">
 										</td>
 										<td class="">
-											<p>Name : <b><?php echo $row['name'] ?></b></p>
-											<p>Price : <b><?php echo "$" . number_format($row['price'], 2) ?></b></p>
+											<p>ประเภท: <b><?php echo $row['name'] ?></b></p>
+											<p>ประเภทเตียง: <b><?php echo $row['name'] ?></b></p>
+											<p>สิ่งอำนวยความสะดวก: <b><?php echo $row['name'] ?></b></p>
+											<p>จำกัดจำนวนผู้เข้าพัก: <b><?php echo $row['name'] ?></b></p>
+											<p>ราคา: <b><?php echo "฿" . number_format($row['price'], 2) ?></b></p>
 										</td>
 										<td class="text-center">
 											<button class="btn btn-sm btn-primary edit_cat" type="button" data-id="<?php echo $row['id'] ?>" data-name="<?php echo $row['name'] ?>" data-price="<?php echo $row['price'] ?>" data-cover_img="<?php echo $row['cover_img'] ?>">แก้ไข</button>
