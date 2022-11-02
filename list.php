@@ -70,12 +70,7 @@ $date_out = isset($_POST['date_out']) ? $_POST['date_out'] : date('Y-m-d', strto
 								<img src="assets/img/<?php echo $cat_arr[$row['category_id']]['cover_img'] ?>" alt="">
 							</div>
 							<div class="col-md-5" height="100%">
-<<<<<<< HEAD
-								<h3><b><?php echo '฿ ' . number_format($cat_arr[$row['category_id']]['price'], 2) ?></b><span> / วัน</span></h3>
-=======
 								<h3><b><?php echo '$ ' . number_format($cat_arr[$row['category_id']]['price'], 2) ?></b><span> / ต่อวัน</span></h3>
-
->>>>>>> f1d35ab9a33a1ee9626cdd509a9df703feb1666d
 								<h4><b>
 										<?php echo $cat_arr[$row['category_id']]['name'] ?>
 										<b><button type="button" class="btn btn-link" style="color: #EF774B;" data-bs-toggle="modal" data-bs-target="#staticBackdrop">รายละเอียดเพิ่มเติม</button></b>
