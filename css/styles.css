@@ -10047,6 +10047,7 @@ hr.light {
   color: #212529;
 }
 #mainNav .navbar-nav .nav-item .nav-link {
+  margin-top: 8px;
   color: #6c757d;
   font-family: 'Prompt', sans-serif;
   font-weight: 700;

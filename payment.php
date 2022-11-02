@@ -23,21 +23,29 @@ $date_out = isset($_POST['date_out']) ? $_POST['date_out'] : date('Y-m-d', strto
             <div class="card">
                 <div class="card-body">
                     <form action="index.php?page=list" id="filter" method="POST">
-                        <div class="row">
-                            <div class="col-md-3">
-                                <label for="">วันที่เช็คอิน</label>
-                                <input type="date" class="form-control datepicker" name="date_in" autocomplete="off" value="<?php echo isset($date_in) ? date("Y-m-d", strtotime($date_in)) : "" ?>">
-                            </div>
-                            <div class="col-md-3">
-                                <label for="">วันที่เช็คเอ้าท์</label>
-                                <input type="date" class="form-control datepicker" name="date_out" autocomplete="off" value="<?php echo isset($date_out) ? date("Y-m-d", strtotime($date_out)) : "" ?>">
-                            </div>
-                            <div class="col-md-3">
-                                <br>
-                                <button class="btn-btn-block btn-primary mt-3">ค้นหา</button>
-                            </div>
+                    <div class="row">
+							<div class="col-md-2">
+								<label for="">วันที่เช็คอิน</label>
+								<input type="date" class="form-control datepicker" name="date_in" autocomplete="off" value="<?php echo isset($date_in) ? date("Y-m-d", strtotime($date_in)) : "" ?>">
+							</div>
+							<div class="col-md-2">
+								<label for="">วันที่เช็คเอ้าท์</label>
+								<input type="date" class="form-control datepicker" name="date_out" autocomplete="off" value="<?php echo isset($date_out) ? date("Y-m-d", strtotime($date_out)) : "" ?>">
+							</div>
+							<div class="col-md-3">
+								<label for="">ผู้ใหญ่</label>
+								<input type="number" class="form-control">
+							</div>
+							<div class="col-md-3">
+								<label for="">เด็ก</label>
+								<input type="number" class="form-control">
+							</div>
+							<div class="col-md-2">
+								<br>
+								<button class="btn-btn-block btn-primary mt-3 ">ค้นหา</button>
+							</div>
 
-                        </div>
+						</div>
                     </form>
                 </div>
             </div>
@@ -89,7 +97,7 @@ $date_out = isset($_POST['date_out']) ? $_POST['date_out'] : date('Y-m-d', strto
                         </div>
                         <div class="col">
                             <div class="img">
-                                <img src="../img/QRCode.jpg" alt="">
+                                <img src="./QRCode.jpg" alt="">
                             </div>
                             <ul>ชื่อบัญชี : VILLA DE PANTA PHU RUEA</ul>
                             <ul>เลขบัญชี : 120-5698-326</ul>
