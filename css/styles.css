@@ -6164,11 +6164,13 @@ button.bg-light:focus {
 }
 
 .bg-dark {
-<<<<<<< HEAD
+
+  background-color: #f7ede2 !important;
+
   background-color: #FFF1EC !important;
-=======
+
   background-color: #fcd3c8 !important;
->>>>>>> 8040251ecc6bdac1bb801a2b128546bf4e05d3c8
+
 }
 
 a.bg-dark:hover, a.bg-dark:focus,
@@ -10063,13 +10065,13 @@ hr.light {
     background-color: transparent;
   }
   #mainNav .navbar-brand {
-    color: rgba(255, 255, 255, 0.7);
+    color: #fff;
   }
   #mainNav .navbar-brand:hover {
     color: #fff;
   }
   #mainNav .navbar-nav .nav-item .nav-link {
-    color: rgba(255, 255, 255, 0.7);
+    color: #fff;
     padding: 0 1rem;
   }
   #mainNav .navbar-nav .nav-item .nav-link:hover {
