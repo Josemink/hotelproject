@@ -92,7 +92,7 @@ $rre=mysqli_query($con,$rsql);
 			 <div class="row">
                     <div class="col-md-12">
                         <h1 class="page-header">
-                           DELETE ROOM <small></small>
+						ลบห้องพัก <small></small>
                         </h1>
                     </div>
                 </div> 
@@ -103,12 +103,12 @@ $rre=mysqli_query($con,$rsql);
                 <div class="col-md-12 col-sm-12">
                     <div class="panel panel-primary">
                         <div class="panel-heading">
-                           Delete room
+                           ลบห้องพัก
                         </div>
                         <div class="panel-body">
 						<form name="form" method="post">
                             <div class="form-group">
-                                            <label>Select the Room ID *</label>
+                                            <label>เลือกห้องที่ต้องการลบ*</label>
                                             <select name="id"  class="form-control" required>
 												<option value selected ></option>
 												<?php

@@ -151,9 +151,9 @@
 										</td>
 										<td class="">
 											<p>ประเภท: <b><?php echo $row['name'] ?></b></p>
-											<p>ประเภทเตียง: <b><?php echo $row['name'] ?></b></p>
-											<p>สิ่งอำนวยความสะดวก: <b><?php echo $row['name'] ?></b></p>
-											<p>จำกัดจำนวนผู้เข้าพัก: <b><?php echo $row['name'] ?></b></p>
+											<p>ประเภทเตียง:</p>
+											<p>สิ่งอำนวยความสะดวก:</b></p>
+											<p>จำกัดจำนวนผู้เข้าพัก:  </p>
 											<p>ราคา: <b><?php echo "฿" . number_format($row['price'], 2) ?></b></p>
 										</td>
 										<td class="text-center">
