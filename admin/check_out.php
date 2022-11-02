@@ -21,7 +21,7 @@ while($row = $room->fetch_assoc()){
 								<th>ลำดับ</th>
 								<th>ประเภทห้อง</th>
 								<th>เลขห้อง</th>
-								<th>Reference</th>
+								<th>เลขที่อ้างอิง</th>
 								<th>สถานะ</th>
 								<th>จัดการ</th>
 							</thead>
@@ -37,9 +37,9 @@ while($row = $room->fetch_assoc()){
 									<td class=""><?php echo $room_arr[$row['room_id']]['room'] ?></td>
 									<td class=""><?php echo $row['ref_no'] ?></td>
 									<?php if($row['status'] == 1): ?>
-										<td class="text-center"><span class="badge badge-warning">Checked-IN</span></td>
+										<td class="text-center"><span class="badge badge-warning">เช็คอิน</span></td>
 									<?php else: ?>
-										<td class="text-center"><span class="badge badge-success">Checked-Out</span></td>
+										<td class="text-center"><span class="badge badge-success">เช็คเอาท์</span></td>
 									<?php endif; ?>
 									<td class="text-center">
 											<button class="btn btn-sm btn-primary check_out" type="button" data-id="<?php echo $row['id'] ?>">ดูรายละเอียดเพิ่มเติม</button>
