@@ -69,13 +69,13 @@ $rre=mysqli_query($con,$rsql);
                 <ul class="nav" id="main-menu">
 
                     <li>
-                        <a  href="settings.php"><i class="fa fa-dashboard"></i>Room Status</a>
+                        <a  href="settings.php"><i class="fa fa-dashboard"></i>สถานะห้อง</a>
                     </li>
 					<li>
-                        <a   href="room.php"><i class="fa fa-plus-circle"></i>Add Room</a>
+                        <a   href="room.php"><i class="fa fa-plus-circle"></i>เพิ่มห้องพัก</a>
                     </li>
                     <li>
-                        <a  class="active-menu" href="roomdel.php"><i class="fa fa-pencil-square-o"></i> Delete Room</a>
+                        <a  class="active-menu" href="roomdel.php"><i class="fa fa-pencil-square-o"></i>ลบห้องพัก</a>
                     </li>
 					
 

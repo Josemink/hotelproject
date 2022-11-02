@@ -70,13 +70,19 @@ $date_out = isset($_POST['date_out']) ? $_POST['date_out'] : date('Y-m-d', strto
 								<img src="assets/img/<?php echo $cat_arr[$row['category_id']]['cover_img'] ?>" alt="">
 							</div>
 							<div class="col-md-5" height="100%">
-								<h3><b><?php echo '$ ' . number_format($cat_arr[$row['category_id']]['price'], 2) ?></b><span> / วัน</span></h3>
-
+								<h3><b><?php echo '฿ ' . number_format($cat_arr[$row['category_id']]['price'], 2) ?></b><span> / วัน</span></h3>
 								<h4><b>
 										<?php echo $cat_arr[$row['category_id']]['name'] ?>
+										<b><button type="button" class="btn btn-link" style="color: #EF774B;" data-bs-toggle="modal" data-bs-target="#staticBackdrop">รายละเอียดเพิ่มเติม</button></b>
 									</b></h4>
-								<div class="align-self-end mt-5">
-									<button class="btn btn-primary  float-right book_now" type="button" data-id="<?php echo $row['category_id'] ?>">จอง</button>
+								<div class="col-md-8">
+									<p class="card-t"><i class='bx bx-wifi'></i>ฟรี Wi-Fi</p>
+									<p class="card-t"></i><i class='bx bx-x'></i>ห้องปลอดบุหรี่</p>
+									<p class="card-t"><i class='bx bxs-bowl-rice'></i>ไม่รวมอาหารเช้า</p>
+									<p class="card-t"><i class='bx bxs-dog'></i>ไม่อนุญาตให้นำสัตว์เลี้ยงเข้าห้องพัก</p>
+								</div>
+								<div class="align-self-end mt-2">
+									<button class="btn btn-primary  float-right book_now" type="button" data-id="<?php echo $row['category_id'] ?>">จองห้องนี้</button>
 								</div>
 							</div>
 						</div>

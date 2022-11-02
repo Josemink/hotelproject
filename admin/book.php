@@ -23,8 +23,9 @@ $calc_days = floor($calc_days / (60 * 60 * 24));
 		<div class="form-group">
 			<label for="" class="control-label">บริการเสริม</label>
 			<select class="custom-select browser-default" name="status">
+			<option selected>เลือกบริการเสริมที่ท่านต้องการ</option>
 				<option value="0">อาหารเช้า</option>
-				<option value="1">เตียวเสริม</option>	
+				<option value="1">เตียงเสริม</option>	
 			</select>
 		</div>
 		<div class="form-group">

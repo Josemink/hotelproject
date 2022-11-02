@@ -95,6 +95,15 @@ $date_out = isset($_POST['date_out']) ? $_POST['date_out'] : date('Y-m-d', strto
                             <ul>เลขบัญชี : 120-5698-326</ul>
                             <ul>ชื่อธนาคาร : ไทยพาณิชย์</ul>
                         </div>
+                        <div class="col-md-6">
+                            <p>เลือกรูปแบบการชำระเงิน</p>
+                            <form action="/action_page.php">
+                            <input type="radio" id="html" name="fav_pay" value="payfull">
+                                <label for="vehicle1"> จ่ายเต็มราคา</label><br>
+                                <input type="radio" id="css" name="fav_pay" value="paydeposit">
+                                <label for="vehicle2"> จ่ายมัดจำ 50 %</label><br>
+                            </form>
+                        </div>
                     </div>
                 </div>
             </div>
