@@ -42,10 +42,10 @@ if(!isset($_SESSION["user"]))
                     <ul class="dropdown-menu dropdown-user">
                         <li><a href="usersetting.php"><i class="fa fa-user fa-fw"></i> User Profile</a>
                         </li>
-                        <li><a href="settings.php"><i class="fa fa-gear fa-fw"></i> Settings</a>
+                        <li><a href="settings.php"><i class="fa fa-gear fa-fw"></i>แก้ไข</a>
                         </li>
                         <li class="divider"></li>
-                        <li><a href="logout.php"><i class="fa fa-sign-out fa-fw"></i> Logout</a>
+                        <li><a href="logout.php"><i class="fa fa-sign-out fa-fw"></i>ออกจากระบบ</a>
                         </li>
                     </ul>
 					
@@ -60,13 +60,13 @@ if(!isset($_SESSION["user"]))
                 <ul class="nav" id="main-menu">
 
                     <li>
-                        <a  href="settings.php"><i class="fa fa-dashboard"></i>Rooms Status</a>
+                        <a  href="settings.php"><i class="fa fa-dashboard"></i>สถานะห้อง</a>
                     </li>
 					<li>
-                        <a  class="active-menu" href="room.php"><i class="fa fa-plus-circle"></i>Add Room</a>
+                        <a  class="active-menu" href="room.php"><i class="fa fa-plus-circle"></i>เพิ่มห้องพัก</a>
                     </li>
                     <li>
-                        <a  href="roomdel.php"><i class="fa fa-desktop"></i> Delete Room</a>
+                        <a  href="roomdel.php"><i class="fa fa-desktop"></i>ลบห้องพัก</a>
                     </li>
 					
 
