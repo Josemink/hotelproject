@@ -1,4 +1,4 @@
-<?php
+<!-- <?php
 
 session_start();
 require_once './admin/db_connect.php';
@@ -39,7 +39,15 @@ if (isset($_POST['signup'])) {
 
     try {
 
+<<<<<<< HEAD
         $check_email = $dbconn->prepare("SELECT email FROM users WHERE email = :email");
+=======
+<<<<<<< HEAD
+        $check_email = $dbconn->prepare("SELECT email FROM users WHERE email = :email");
+=======
+        $check_email = $dbconn->prepare("SELECT email FROM user WHERE email = :email");
+>>>>>>> 588029cb47b7371f8cdf196bd4b659f7c3d657c3
+>>>>>>> 353f16ee60bc1a4ad760c78d1c229d0196041149
         $check_email->bindParam(":email" , $email);
         $check_email->execute();
         $row = $check_email->fetch(PDO::FETCH_ASSOC);
@@ -50,7 +58,15 @@ if (isset($_POST['signup'])) {
         } else if (!isset($_SESSION['error'])){
             $passwordHash = password_hash($password, PASSWORD_DEFAULT);
             $stmt = $dbconn->prepare (
+<<<<<<< HEAD
                 "INSERT INTO users (firstname, lastname, email, password, urole)
+=======
+<<<<<<< HEAD
+                "INSERT INTO users (firstname, lastname, email, password, urole)
+=======
+                "INSERT INTO user(firstname, lastname, email, password, urole)
+>>>>>>> 588029cb47b7371f8cdf196bd4b659f7c3d657c3
+>>>>>>> 353f16ee60bc1a4ad760c78d1c229d0196041149
                 VALUES(:firstname, :lastname, :email, :password, :urole)");
             $stmt->bindParam(":firstname", $name);
             $stmt->bindParam(":lastname", $lastname);
@@ -71,4 +87,4 @@ if (isset($_POST['signup'])) {
 }
  
 }
-?>
+?> -->

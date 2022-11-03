@@ -11,7 +11,8 @@
 
 				<a href="index.php?page=home" class="nav-item nav-home"><span class='icon-field'><i class="fa fa-home"></i></span>หน้าหลัก</a>
 				<a href="index.php?page=booked" class="nav-item nav-booked"><span class='icon-field'><i class="fa fa-book"></i></span>การจอง</a>
-				<a href="index.php?page=booked" class="nav-item nav-booked"><span class='icon-field'><i class="fa fa-book"></i></span>ปฏิทินการจอง</a>
+				<a href="index.php?page=calenderbook" class="nav-item nav-"><span class='icon-field'><i class="fa fa-"></i></span>ปฏิทินการจอง</a>
+				<a href="index.php?page=checkpay" class="nav-item nav-pay"><span class='icon-field'><i class="fa fa-pay"></i></span>ตรวจสอบการชำระเงิน</a>
 				<a href="index.php?page=check_in" class="nav-item nav-check_in"><span class='icon-field'><i class="fa fa-sign-in-alt"></i></span> Check In </a>
 				<a href="index.php?page=check_out" class="nav-item nav-check_out"><span class='icon-field'><i class="fa fa-sign-out-alt"></i></span> Check Out </a>
 				<a href="index.php?page=categories" class="nav-item nav-categories"><span class='icon-field'><i class="fa fa-list"></i></span>จัดการห้องพัก </a>
