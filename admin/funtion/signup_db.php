@@ -38,7 +38,7 @@ if (isset($_POST['signup'])) {
 
     try {
 
-        $check_email = $conn->prepare("SELECT email FROM user WHERE email = :email");
+        $check_email = $dbconn->prepare("SELECT email FROM user WHERE email = :email");
         $check_email->bindParam(":email" , $email);
         $check_email->execute();
         $row = $check_email->fetch(PDO::FETCH_ASSOC);
@@ -48,7 +48,7 @@ if (isset($_POST['signup'])) {
             header("location: register.php");
         } else if (!isset($_SESSION['error'])){
             $passwordHash = password_hash($password, PASSWORD_DEFAULT);
-            $stmt = $conn->prepare (
+            $stmt = $dbconn->prepare (
                 "INSERT INTO user(firstname, lastname, email, password, urole)
                 VALUES(:firstname, :lastname, :email, :password, :urole)");
             $stmt->bindParam(":firstname", $name);
