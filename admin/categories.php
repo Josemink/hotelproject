@@ -18,16 +18,16 @@
 								<input type="text" class="form-control" name="name">
 							</div>
 							<div class="mb-3">
-								<label for="R_Bed" class="form-label">ประเภทเตียง</label>
+								<label for="Bed" class="form-label">ประเภทเตียง</label>
 								<div class="form-check">
 									<input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
 									<label class="form-check-label" for="flexCheckDefault">เตียงคู่</label>
-									<input id="number" type="number" value="" class="form-control" id="bed1" name="Bed" aria-describedby="emailHelp" placeholder="กรุณาระบุจำนวนเตียง">
+									<input id="number" type="number" value="" class="form-control" id="1" name="Bed" aria-describedby="emailHelp" placeholder="กรุณาระบุจำนวนเตียง">
 								</div>
 								<div class="form-check">
 									<input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
 									<label class="form-check-label" for="flexCheckDefault">เตียงเดี่ยว</label>
-									<input id="number" type="number" value="" class="form-control" id="bed2" name="Bed" aria-describedby="emailHelp" placeholder="กรุณาระบุจำนวนเตียง">
+									<input id="number" type="number" value="" class="form-control" id="2" name="Bed" aria-describedby="emailHelp" placeholder="กรุณาระบุจำนวนเตียง">
 								</div>
 							</div>
 							<div class="mb-1">
@@ -151,7 +151,7 @@
 										</td>
 										<td class="">
 											<p>ประเภท: <b><?php echo $row['name'] ?></b></p>
-											<p>ประเภทเตียง:</p>
+											<p>ประเภทเตียง:<?php echo $row['Bed'] ?></b></p></p>
 											<p>สิ่งอำนวยความสะดวก:</b></p>
 											<p>จำกัดจำนวนผู้เข้าพัก:  </p>
 											<p>ราคา: <b><?php echo "฿" . number_format($row['price'], 2) ?></b></p>
@@ -228,6 +228,7 @@
 		cat.get(0).reset()
 		cat.find("[name='id']").val($(this).attr('data-id'))
 		cat.find("[name='name']").val($(this).attr('data-name'))
+		cat.find("[name='Bed']").val($(this).attr('data-Bed'))
 		cat.find("[name='price']").val($(this).attr('data-price'))
 		cat.find("#cimg").attr('src', '../assets/img/' + $(this).attr('data-cover_img'))
 		end_load()

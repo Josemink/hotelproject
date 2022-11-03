@@ -249,7 +249,7 @@ if(!isset($_SESSION["user"]))
 														<label>Select the Conformation</label>
 														<select name="conf"class="form-control">
 															<option value selected>	</option>
-															<option value="Conform">Conform</option>
+															<option value="Conform">ยืนยัน</option>
 															
 															
 														</select>

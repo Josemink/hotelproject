@@ -20,7 +20,7 @@ while($row = $room->fetch_assoc()){
 							<thead>
 								<th>ลำดับ</th>
 								<th>ประเภทห้องพัก</th>
-								<th>ลำดับการจอง</th>
+								<th>เลขห้องพัก</th>
 								<th>สถานะการจอง</th>
 								<th>จัดการ</th>
 							</thead>

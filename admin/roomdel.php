@@ -19,7 +19,7 @@ $rre=mysqli_query($con,$rsql);
 <head>
       <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>SUNRISE HOTEL</title>
+
 	<!-- Bootstrap Styles-->
     <link href="assets/css/bootstrap.css" rel="stylesheet" />
      <!-- FontAwesome Styles-->
@@ -69,13 +69,13 @@ $rre=mysqli_query($con,$rsql);
                 <ul class="nav" id="main-menu">
 
                     <li>
-                        <a  href="settings.php"><i class="fa fa-dashboard"></i>Room Status</a>
+                        <a  href="settings.php"><i class="fa fa-dashboard"></i>สถานะห้อง</a>
                     </li>
 					<li>
-                        <a   href="room.php"><i class="fa fa-plus-circle"></i>Add Room</a>
+                        <a   href="room.php"><i class="fa fa-plus-circle"></i>เพิ่มห้องพัก</a>
                     </li>
                     <li>
-                        <a  class="active-menu" href="roomdel.php"><i class="fa fa-pencil-square-o"></i> Delete Room</a>
+                        <a  class="active-menu" href="roomdel.php"><i class="fa fa-pencil-square-o"></i>ลบห้องพัก</a>
                     </li>
 					
 
@@ -137,7 +137,7 @@ $rre=mysqli_query($con,$rsql);
 								$sql ="DELETE FROM `room` WHERE id = '$did'" ;
 								if(mysqli_query($con,$sql))
 								{
-								 echo '<script type="text/javascript">alert("Delete the Room") </script>' ;
+								 echo '<script type="text/javascript">alert("ลบห้องพักนี้") </script>' ;
 										
 										header("Location: roomdel.php");
 								}else {

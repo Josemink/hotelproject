@@ -28,16 +28,16 @@ if($_GET['id']){
 	}
 </style>
 <div class="container-fluid">
-	<p><b>เลขห้อง: </b><?php echo isset($room['room']) ? $room['room'] : 'NA' ?></p>
+	<p><b>เลขห้อง: </b><?php echo isset($room['room']) ? $room['room'] : 'room' ?></p>
 	<p><b>ประเภทห้อง : </b><?php echo $cat['name'] ?></p>
 	<p><b>ราคา : </b><?php echo '$'.number_format($cat['price'],2) ?></p>
 	<p><b>เลขที่อ้างอิง : </b><?php echo $ref_no ?></p>
 	<p><b>ชื่อผู้จอง : </b><?php echo $name ?></p>
-	<p><b>เบอร์โทร : </b><?php echo $contact_no ?></p>
+	<p><b>เบอร์โทรศัพท์ : </b><?php echo $contact_no ?></p>
 	<p><b>วัน-เวลาที่เช็คอิน: </b><?php echo date("M d, Y h:i A",strtotime($date_in)) ?></p>
 	<p><b>วัน-เวลาที่เช็คเอาท์ : </b><?php echo date("M d, Y h:i A",strtotime($date_out)) ?></p>
 	<p><b>จำนวนวัน : </b><?php echo $calc_days ?></p>
-	<p><b>รารคาทั้งหมด: </b><?php echo '$'.number_format($cat['price'] * $calc_days ,2) ?></p>
+	<p><b>ราคาทั้งหมด: </b><?php echo '$'.number_format($cat['price'] * $calc_days ,2) ?></p>
 	
 		<div class="row">
 			<?php if(isset($_GET['checkout']) && $status != 2): ?>
