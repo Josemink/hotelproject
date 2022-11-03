@@ -37,7 +37,7 @@
 									<option value="0">ว่าง</option>
 									<option value="1">เต็ม</option>
 									<option value="2">กำลังทำความสะอาด</option>
-									<option value="3">ในระหว่างดการซ่อมแซม</option>
+									<option value="3">อยู่ในระหว่างการซ่อมแซม</option>
 								</select>
 							</div>
 					</div>
