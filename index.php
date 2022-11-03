@@ -36,7 +36,7 @@
                         <li class="nav-item"><a class="nav-link js-scroll-trigger" href="index.php?page=payment">ชำระเงิน</a></li>
                         <li class="nav-item"><a class="nav-link js-scroll-trigger" href="index.php?page=mybooking">การจองของฉัน</a></li>
                         <li class="nav-item"><a class="nav-link js-scroll-trigger" href="index.php?page=about">About</a></li>
-                        <button type="button" class="btn btn-outline-dark">เข้าสู่ระบบ</button>
+                        <a  type="button" class="btn btn-outline-dark" href="./admin/login.php">เข้าสู่ระบบ</a>
 
                     </ul>
                 </div>

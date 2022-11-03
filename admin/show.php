@@ -265,12 +265,6 @@ tr:hover .cut { opacity: 1; }
 			
 			
 		</article>
-		<aside>
-			<h1><span >Contact us</span></h1>
-			<div >
-				<p align="center">Email :- info@sunrise.com || Web :- www.sunrise.com || Phone :- +94 65 222 44 55 </p>
-			</div>
-		</aside>
 	</body>
 </html>
 
