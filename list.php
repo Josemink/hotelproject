@@ -1,7 +1,21 @@
 <?php
 $date_in = isset($_POST['date_in']) ? $_POST['date_in'] : date('Y-m-d');
 $date_out = isset($_POST['date_out']) ? $_POST['date_out'] : date('Y-m-d', strtotime(date('Y-m-d') . ' + 3 days'));
+include('header.php');
 ?>
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Document</title>
+
+</head>
+<body>
+	
 
 <!-- Masthead-->
 <header class="masthead">
@@ -73,7 +87,7 @@ $date_out = isset($_POST['date_out']) ? $_POST['date_out'] : date('Y-m-d', strto
 								<h3><b><?php echo '$ ' . number_format($cat_arr[$row['category_id']]['price'], 2) ?></b><span> / ต่อวัน</span></h3>
 								<h4><b>
 										<?php echo $cat_arr[$row['category_id']]['name'] ?>
-										<b><button type="button" class="btn btn-link" style="color: #EF774B;" data-bs-toggle="modal" data-bs-target="#staticBackdrop">รายละเอียดเพิ่มเติม</button></b>
+										<b><button type="button" class="btn btn-link" style="color: #EF774B;" data-bs-toggle="modal" data-bs-target="#roomdetail">รายละเอียดเพิ่มเติม</button></b>
 									</b></h4>
 								<div class="col-md-8">
 									<p class="card-t"><i class='bx bx-wifi'></i>ฟรี Wi-Fi</p>
@@ -92,6 +106,10 @@ $date_out = isset($_POST['date_out']) ? $_POST['date_out'] : date('Y-m-d', strto
 			<?php endwhile; ?>
 		</div>
 	</div>
+
+
+
+	
 </section>
 <style type="text/css">
 	.item-rooms img {
@@ -103,3 +121,7 @@ $date_out = isset($_POST['date_out']) ? $_POST['date_out'] : date('Y-m-d', strto
 		uni_modal('Book', 'admin/book.php?in=<?php echo $date_in ?>&out=<?php echo $date_out ?>&cid=' + $(this).attr('data-id'))
 	})
 </script>
+<?php require './modal/modal-roomdetal.php' ?>
+
+</body>
+</html>

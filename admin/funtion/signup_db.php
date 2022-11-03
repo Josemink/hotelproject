@@ -18,6 +18,7 @@ if (isset($_POST['signup'])) {
         header("location: register.php");
     } else if (empty($email)) {
         $_SESSION['error'] = 'กรุณากรอกนามอีเมล';
+        
         header("location: register.php");
     } else if (!filter_var($email, FILTER_VALIDATE_EMAIL)) {
         $_SESSION['error'] = 'รูปแบบอีเมลไม่ถูกต้อง';
@@ -38,7 +39,7 @@ if (isset($_POST['signup'])) {
 
     try {
 
-        $check_email = $dbconn->prepare("SELECT email FROM user WHERE email = :email");
+        $check_email = $dbconn->prepare("SELECT email FROM users WHERE email = :email");
         $check_email->bindParam(":email" , $email);
         $check_email->execute();
         $row = $check_email->fetch(PDO::FETCH_ASSOC);
@@ -49,7 +50,7 @@ if (isset($_POST['signup'])) {
         } else if (!isset($_SESSION['error'])){
             $passwordHash = password_hash($password, PASSWORD_DEFAULT);
             $stmt = $dbconn->prepare (
-                "INSERT INTO user(firstname, lastname, email, password, urole)
+                "INSERT INTO users (firstname, lastname, email, password, urole)
                 VALUES(:firstname, :lastname, :email, :password, :urole)");
             $stmt->bindParam(":firstname", $name);
             $stmt->bindParam(":lastname", $lastname);
