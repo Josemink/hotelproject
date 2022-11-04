@@ -19,37 +19,6 @@ $date_out = isset($_POST['date_out']) ? $_POST['date_out'] : date('Y-m-d', strto
 <section class="page-section bg-dark">
 
 	<div class="container">
-		<div class="col-lg-12">
-			<div class="card">
-				<div class="card-body">
-					<form action="index.php?page=list" id="filter" method="POST">
-						<div class="row">
-							<div class="col-md-2">
-								<label for="">วันที่เช็คอิน</label>
-								<input type="date" class="form-control datepicker" name="date_in" autocomplete="off" value="<?php echo isset($date_in) ? date("Y-m-d", strtotime($date_in)) : "" ?>">
-							</div>
-							<div class="col-md-2">
-								<label for="">วันที่เช็คเอ้าท์</label>
-								<input type="date" class="form-control datepicker" name="date_out" autocomplete="off" value="<?php echo isset($date_out) ? date("Y-m-d", strtotime($date_out)) : "" ?>">
-							</div>
-							<div class="col-md-3">
-								<label for="">ผู้ใหญ่</label>
-								<input type="number" class="form-control">
-							</div>
-							<div class="col-md-3">
-								<label for="">เด็ก</label>
-								<input type="number" class="form-control">
-							</div>
-							<div class="col-md-2">
-								<br>
-								<button class="btn-btn-block btn-primary mt-3 ">ค้นหา</button>
-							</div>
-
-						</div>
-					</form>
-				</div>
-			</div>
-		</div>
 		<hr>
 		<div class="container-fluid">
 			<div class="col-lg-12">
@@ -87,10 +56,6 @@ $date_out = isset($_POST['date_out']) ? $_POST['date_out'] : date('Y-m-d', strto
 			$('table').dataTable()
 			$('.check_out').click(function() {
 				uni_modal("Check Out", "manage_check_out.php?checkout=1&id=" + $(this).attr("data-id"))
-			})
-			$('#filter').submit(function(e) {
-				e.preventDefault()
-				location.replace('index.php?page=check_in&category_id=' + $(this).find('[name="category_id"]').val() + '&status=' + $(this).find('[name="status"]').val())
 			})
 		</script>
 	</div>
