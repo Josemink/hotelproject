@@ -50,5 +50,49 @@ $date_out = isset($_POST['date_out']) ? $_POST['date_out'] : date('Y-m-d', strto
 				</div>
 			</div>
 		</div>
+		<hr>
+		<div class="container-fluid">
+			<div class="col-lg-12">
+				<div class="row mt-3">
+					<div class="col-md-12">
+						<div class="card">
+							<div class="card-body">
+								<table class="table table-bordered">
+									<thead>
+										<th>หมายเลขการจอง</th>
+										<th>ชื่อผู้จอง</th>
+										<th>รายละเอียดการจอง</th>
+										<th>สถานะการจอง</th>
+										<th>พิมพ์เอกสารการจอง</th>
+									</thead>
+									<tbody>
+										<?php
+												$i = 1;
+												$checked = $conn->query("SELECT * FROM checked where status = 0 order by status desc, id asc");
+												while ($row = $checked->fetch_assoc()) :
+												?>
+								
+										</tr>
+									<?php endwhile; ?>
+									</tbody>
+								</table>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<script>
+			$('table').dataTable()
+			$('.check_out').click(function() {
+				uni_modal("Check Out", "manage_check_out.php?checkout=1&id=" + $(this).attr("data-id"))
+			})
+			$('#filter').submit(function(e) {
+				e.preventDefault()
+				location.replace('index.php?page=check_in&category_id=' + $(this).find('[name="category_id"]').val() + '&status=' + $(this).find('[name="status"]').val())
+			})
+		</script>
 	</div>
+
 </section>

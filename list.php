@@ -80,10 +80,10 @@ $date_out = isset($_POST['date_out']) ? $_POST['date_out'] : date('Y-m-d', strto
 
 										<!-- Button trigger modal -->
 										<b><button type="button" class="btn btn-link" style="color: #EF774B;" data-bs-toggle="modal" data-bs-target="#exampleModal">
-											รายละเอียดเพิ่มเติม
-										</button></b>
-										
-									</h4> 
+												รายละเอียดเพิ่มเติม
+											</button></b>
+
+								</h4>
 								<div class="col-md-8">
 									<p class="card-t"><i class='bx bx-wifi'></i>ฟรี Wi-Fi</p>
 									<p class="card-t"></i><i class='bx bx-x'></i>ห้องปลอดบุหรี่</p>
@@ -109,7 +109,7 @@ $date_out = isset($_POST['date_out']) ? $_POST['date_out'] : date('Y-m-d', strto
 		<div class="modal-dialog modal-xl">
 			<div class="modal-content">
 				<div class="modal-header">
-					<h1 class="modal-title fs-5" id="exampleModalLabel">Modal title</h1>
+					<h1 class="modal-title fs-5" id="exampleModalLabel">รายละเอียดเพิ่มเติม</h1>
 					<button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
 				</div>
 				<div class="modal-body">
@@ -164,6 +164,9 @@ $date_out = isset($_POST['date_out']) ? $_POST['date_out'] : date('Y-m-d', strto
 						</div>
 					</div>
 				</div>
+			</div>
+		</div>
+	</div>
 
 
 
