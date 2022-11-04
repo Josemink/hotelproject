@@ -1,21 +1,11 @@
 <?php
 $date_in = isset($_POST['date_in']) ? $_POST['date_in'] : date('Y-m-d');
 $date_out = isset($_POST['date_out']) ? $_POST['date_out'] : date('Y-m-d', strtotime(date('Y-m-d') . ' + 3 days'));
-include('header.php');
+// include 'link.php';
 ?>
 
 
-<!DOCTYPE html>
-<html lang="en">
-<head>
-	<meta charset="UTF-8">
-	<meta http-equiv="X-UA-Compatible" content="IE=edge">
-	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<title>Document</title>
 
-</head>
-<body>
-	
 
 <!-- Masthead-->
 <header class="masthead">
@@ -87,8 +77,13 @@ include('header.php');
 								<h3><b><?php echo '$ ' . number_format($cat_arr[$row['category_id']]['price'], 2) ?></b><span> / ต่อวัน</span></h3>
 								<h4><b>
 										<?php echo $cat_arr[$row['category_id']]['name'] ?>
-										<b><button type="button" class="btn btn-link" style="color: #EF774B;" data-bs-toggle="modal" data-bs-target="#roomdetail">รายละเอียดเพิ่มเติม</button></b>
-									</b></h4>
+
+										<!-- Button trigger modal -->
+										<b><button type="button" class="btn btn-link" style="color: #EF774B;" data-bs-toggle="modal" data-bs-target="#exampleModal">
+											รายละเอียดเพิ่มเติม
+										</button></b>
+										
+									</h4> 
 								<div class="col-md-8">
 									<p class="card-t"><i class='bx bx-wifi'></i>ฟรี Wi-Fi</p>
 									<p class="card-t"></i><i class='bx bx-x'></i>ห้องปลอดบุหรี่</p>
@@ -109,7 +104,69 @@ include('header.php');
 
 
 
-	
+	<!-- Modal -->
+	<div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+		<div class="modal-dialog modal-xl">
+			<div class="modal-content">
+				<div class="modal-header">
+					<h1 class="modal-title fs-5" id="exampleModalLabel">Modal title</h1>
+					<button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+				</div>
+				<div class="modal-body">
+					<div class="container-fluid">
+						<div class="row">
+							<div class="col-md-15">
+								<!-- รูปห้อง -->
+								<div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
+									<div class="carousel-inner">
+										<div class="carousel-item active">
+											<img src="#" class="d-block w-100" alt="...">
+										</div>
+									</div>
+									<button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="prev">
+										<span class="carousel-control-prev-icon" aria-hidden="true"></span>
+										<span class="visually-hidden">Previous</span>
+									</button>
+									<button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="next">
+										<span class="carousel-control-next-icon" aria-hidden="true"></span>
+										<span class="visually-hidden">Next</span>
+									</button>
+								</div>
+							</div>
+							<h6 class="typeroom"><b>ใส่โค้ดประเภทห้อง</b></h6>
+							<div class="col-md-5"><br>
+								<p><b>ห้องนอน</b></p>
+								<ul>ใส่โค้ดเตียง</ul>
+								<ul>ใส่ห้องน้ำ</ul><br>
+								<div class="col-md-5"><br>
+									<p><b>ลักษณะห้อง</b></p>
+									<ul>ห้องปลอดบุหรี่</ul>
+									<ul>มีพื้นที่นั่งเล่น</ul><br>
+								</div>
+							</div>
+
+							<div class="col-md-7 ms-auto "><br>
+								<p><b>สิ่งอำนวยความสะดวก</b></p>
+								<ul>ใส่โค้ดสิ่งอำนวยความสะดวก</ul>
+							</div>
+
+							<div class="col-md-3 ms-auto" style="margin-top:-325px ;">
+								<p><b>ทิวทัศน์บริเวณที่พัก</b></p>
+								<ul>ภูเขา</ul>
+								<ul>ทุ่งนา</ul><br>
+
+								<p><b>พื้นที่ส่วนรวม</b></p>
+								<ul>ร้านกาแฟ</ul>
+								<ul>ร้านอาหาร</ul>
+								<ul>คาเฟ่ทุ่งนา</ul>
+								<ul>ที่จอดรถ</ul>
+							</div>
+						</div>
+					</div>
+				</div>
+
+
+
 </section>
 <style type="text/css">
 	.item-rooms img {
@@ -121,7 +178,4 @@ include('header.php');
 		uni_modal('Book', 'admin/book.php?in=<?php echo $date_in ?>&out=<?php echo $date_out ?>&cid=' + $(this).attr('data-id'))
 	})
 </script>
-<?php require './modal/modal-roomdetal.php' ?>
-
-</body>
-</html>
+<!-- <?php require './modal/modal-roomdetal.php' ?> -->
